@@ -1,0 +1,188 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --second-font: "Raleway";
+  --main-color: #757575;
+  --accent-color: #2196f3;
+  --secondary-color: #212121;
+  --third-color: #ffffff;
+  --background-color: #ffffff;
+}
+
+/* ==== COMPONENTS ====*/
+
+body {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  color: var(--main-color);
+  background-color: var(--background-color);
+}
+
+.list-no-style {
+  list-style: none;
+}
+
+.address {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+
+/* ==== /COMPONENTS ====*/
+
+/* ==== HEADER ==== */
+.header .link,
+.header .link:visited {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+
+.header .link:hover,
+.header .link:active,
+.header .link:focus {
+  color: var(--accent-color);
+}
+
+.logo {
+  font-family: var(--second-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+
+.logo .accent {
+  color: var(--accent-color);
+}
+
+/* ==== /HEADER ==== */
+
+/* ==== TOP ==== */
+.tagline {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  /* color: var(--third-color); */
+}
+
+.order-service-btn {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--third-color);
+}
+/* ==== /TOP ==== */
+
+/* ==== FEATURES ==== */
+.features h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+.features p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/* ==== /FEATURES ==== */
+/* ==== OCCUPATION ==== */
+/* ==== /OCCUPATION ==== */
+/* ==== TEAM ==== */
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+
+.position {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+/* ==== /TEAM ==== */
+
+/* ==== FOOTER ==== */
+.footer {
+  background-color: #2f303a;
+}
+
+.footer .city {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--third-color);
+}
+
+.footer .link,
+.footer .link:visited {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .link:hover,
+.footer .link:focus,
+.footer .link:active {
+  color: var(--accent-color);
+}
+/* ==== /FOOTER ==== */
+
+/* ==== PORTFOLIO ==== */
+.filter-btn {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+
+.filter-btn:hover,
+.filter-btn:active,
+.filter-btn:focus {
+  color: var(--third-color);
+}
+
+.portfolio h2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-color);
+}
+
+.portfolio p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+/* ==== /PORTFOLIO ==== */
