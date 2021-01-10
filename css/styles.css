@@ -6,9 +6,15 @@
   --secondary-color: #212121;
   --third-color: #ffffff;
   --background-color: #ffffff;
+  --second-background-color: #2f303a;
+  --third-background-color: #f5f4fa;
 }
 
 /* ==== COMPONENTS ====*/
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: var(--main-font);
@@ -20,6 +26,8 @@ body {
 
 .list-no-style {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .address {
@@ -35,11 +43,42 @@ h2 {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 94px 0;
 }
 
 /* ==== /COMPONENTS ====*/
 
 /* ==== HEADER ==== */
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  padding: 25px 0;
+  /* background-color: pink; */
+  border: 1px solid #ececec;
+}
+
+.header .menu {
+  display: flex;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+}
+
 .header .link,
 .header .link:visited {
   font-weight: 500;
@@ -63,22 +102,48 @@ h2 {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  margin-right: 93px;
 }
 
 .logo .accent {
   color: var(--accent-color);
 }
 
+.contacts {
+  margin-left: auto;
+}
+
+.contacts li:not(:first-child) {
+  margin-left: 50px;
+}
+
+.menu ul li:not(:last-child) {
+  margin-right: 50px;
+}
 /* ==== /HEADER ==== */
 
 /* ==== TOP ==== */
 .tagline {
+  height: 600px;
+  background: var(--second-background-color);
+}
+
+.tagline .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tagline h1 {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* color: var(--third-color); */
+  color: var(--third-color);
+  text-align: center;
+  padding-top: 200px;
+  margin-bottom: 30px;
 }
 
 .order-service-btn {
@@ -89,10 +154,21 @@ h2 {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--third-color);
+  padding: 10px 29px;
+
+  width: 200px;
+  min-height: 50px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 /* ==== /TOP ==== */
 
 /* ==== FEATURES ==== */
+.features {
+  padding-bottom: 0;
+}
+
 .features h3 {
   font-weight: bold;
   font-size: 14px;
@@ -100,35 +176,89 @@ h2 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-color);
+  margin-bottom: 10px;
 }
 
 .features p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  width: 270px;
+  min-height: 75px;
 }
+
+.features ul {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* ==== /FEATURES ==== */
 /* ==== OCCUPATION ==== */
+.occupation ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.occupation h2 {
+  text-align: center;
+}
+
 /* ==== /OCCUPATION ==== */
 /* ==== TEAM ==== */
+.team {
+  height: 648px;
+  background-color: var(--third-background-color);
+}
+
+.team ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team li {
+  width: 270px;
+  height: 368px;
+  background: var(--background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  text-align: center;
+  margin-top: 30px;
 }
 
 .position {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.team h2 {
+  text-align: center;
 }
 /* ==== /TEAM ==== */
 
 /* ==== FOOTER ==== */
 .footer {
+  height: 252px;
   background-color: #2f303a;
+}
+.footer .container {
+  padding-top: 60px;
+}
+
+.footer .logo {
+  color: var(--third-color);
+  margin-right: 0;
 }
 
 .footer .city {
@@ -136,6 +266,7 @@ h2 {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--third-color);
+  margin-top: 20px;
 }
 
 .footer .link,
@@ -151,9 +282,18 @@ h2 {
 .footer .link:active {
   color: var(--accent-color);
 }
+
+.footer li:not(:last-child) {
+  margin-bottom: 9px;
+}
 /* ==== /FOOTER ==== */
 
 /* ==== PORTFOLIO ==== */
+.portfolio .buttons {
+  display: flex;
+  justify-content: center;
+}
+
 .filter-btn {
   font-family: var(--main-font);
   font-style: normal;
@@ -163,20 +303,55 @@ h2 {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+
+  background-color: var(--third-background-color);
+  border-radius: 4px;
+  border-width: 0;
+
+  margin-bottom: 56px;
+  padding: 6px 22px;
+}
+
+.buttons li:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter-btn:hover,
 .filter-btn:active,
 .filter-btn:focus {
   color: var(--third-color);
+  background-color: var(--accent-color);
 }
 
-.portfolio h2 {
+.portfolio .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content li {
+  width: 370px;
+  height: 404px;
+  background: var(--background-color);
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.content li:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.content li:nth-child(-n + 6) {
+  margin-bottom: 30px;
+}
+
+.portfolio h3 {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-color);
+  margin-left: 24px;
 }
 
 .portfolio p {
@@ -184,5 +359,11 @@ h2 {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  margin-left: 24px;
+  margin-top: 4px;
+}
+
+.content img {
+  margin-bottom: 20px;
 }
 /* ==== /PORTFOLIO ==== */
